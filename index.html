@@ -13,16 +13,108 @@
 </head>
 
 <body>
-  <h1>Assignment 5 Bus Ticket</h1>
-  <header>
-    <nav>
-
+  <header class="max-w-7xl mx-auto my-7">
+    <nav class="flex justify-between items-center mb-7">
+      <div>
+        <h3 class="font-extrabold text-4xl">P-Ticket</h3>
+      </div>
+      <div>
+        <ul class="flex gap-6 text-lg">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Destination</a></li>
+          <li><a href="">Search</a></li>
+        </ul>
+      </div>
+      <button class="btn flex gap-2 bg-[#1dd1001A] hover:bg-[#1dd1005E] border-[#1dd100]">
+        <span class="text-xl text-[#1dd100]">Bus</span>
+        <img src="images/bus-icon.png" alt="">
+      </button>
     </nav>
-    <section id="banner"></section>
+    <section id="banner"
+      class="text-center h-[550px] flex flex-col gap-6 justify-center bg-cover bg-[url(images/banner.png)] rounded-[32px]">
+      <h1 class="font-extrabold text-[64px] text-white">End-to-End Travel with</h1>
+      <h1 class="font-extrabold text-[64px] text-[#1dd100]">A.R Paribahan</h1>
+      <p class="text-white">
+        Yes, you can run unit tests and view the results directly within the app. The
+        integrated testing features allow for a streamlined .
+      </p>
+      <a href="#arparibahan"
+        class="btn font-bold mx-auto flex gap-2 bg-[#1dd100] hover:bg-[#1dd1005E] border-[#1dd100] hover:border-[#1dd100] hover:text-white">Buy
+        Tickets</a>
+    </section>
   </header>
-  <main></main>
+  <main>
+    <!-- Best offers for you -->
+    <section class="max-w-7xl mx-auto mt-7 text-center">
+      <h3 class="font-bold text-4xl my-12">Best offers for you</h3>
+      <!-- Coupon Card -->
+      <div class="flex justify-between gap-3">
+        <!-- Coupon-1 -->
+        <div class="flex justify-between items-center w-1/2 gap-1 bg-[#ffbf0f] rounded-3xl">
+          <div class="text-left p-14 w-[55%]">
+            <h3 class="roboto-regular font-bold text-4xl">15% OFF</h3>
+            <p class="font-semibold my-2">on your next purchase</p>
+            <p>use by March 2024</p>
+          </div>
+          <img src="images/coupon-devider.png" alt="">
+          <div class="p-14">
+            <h3 class="font-bold text-4xl">NEW15</h3>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+        <!-- Coupon-2 -->
+        <div class="flex justify-between items-center w-1/2 gap-1 bg-[#f78c9c] rounded-3xl">
+          <div class="text-left p-14 w-[50%]">
+            <h3 class="roboto-regular font-bold text-4xl">20% OFF</h3>
+            <p class="font-semibold my-2">on your next purchase</p>
+            <p>use by March 2024</p>
+          </div>
+          <img src="images/coupon-devider.png" alt="">
+          <div class="py-14 pr-11">
+            <h3 class="font-bold text-4xl">Couple 20</h3>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn font-bold mx-auto my-7 flex gap-2 bg-white hover:bg-[#1dd100] border-[#1dd100] text-[#1dd100] hover:text-white">See All Offers</button>
+    </section>
+    <!-- A.R Paribahan -->
+    <section id="arparibahan" class="bg-[#f7f8f8] border-t-2 border-[#1dd100] rounded-t-[88px]">
+      <div class="max-w-7xl mx-auto mt-7 text-center ">
+        <h3 class="font-bold text-5xl mt-32">A.R Paribahan</h3>
+        <p class="my-6 text-[#03071299]">
+          Yes, you can run unit tests and view the results directly within the app. The integrated testing features
+          allow
+          for a streamlined .
+        </p>
+        <div class="grid grid-cols-4 bg-white rounded-3xl">
+          <div class="flex justify-between px-8 col-span-3 bg-red-400">
+            <div class="flex">
+              <img src="images/bus-logo.png" alt="">
+              <div>
+                <h3>Greenline Paribahan</h3>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+            </div>
+            <div class="flex">
+              <img src="images/seat-green.png" alt="">
+              <p><span>40</span>Seats left</p>
+            </div>
+          </div>
+          <!-- <div class="divider lg:divider-horizontal"></div>  -->
+          <img src="images/info-devider.png" alt="">
+          <div class="flex flex-col col-span-1 items-center">
+            <div><img src="images/fare.png" alt=""></div>
+            <h3>550 Taka</h3>
+            <p>Per Seat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
-
+    <hr class="pb-[200px]">
   </footer>
   <script src="js/utility.js"></script>
   <script src="js/ticket.js"></script>
