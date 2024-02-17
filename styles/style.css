@@ -17,3 +17,19 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
+.driver,
+.seat {
+  border-radius: 8px;
+  background: rgb(247, 248, 248);
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.driver,
+.seat-line,
+.seat {
+  margin: 12px 0;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}

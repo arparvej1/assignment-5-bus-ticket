@@ -77,7 +77,9 @@
           </div>
         </div>
       </div>
-      <button class="btn font-bold mx-auto my-7 flex gap-2 bg-white hover:bg-[#1dd100] border-[#1dd100] text-[#1dd100] hover:text-white">See All Offers</button>
+      <button
+        class="btn font-bold mx-auto my-7 flex gap-2 bg-white hover:bg-[#1dd100] border-[#1dd100] text-[#1dd100] hover:text-white">See
+        All Offers</button>
     </section>
     <!-- A.R Paribahan -->
     <section id="arparibahan" class="bg-[#f7f8f8] border-t-2 border-[#1dd100] rounded-t-[88px]">
@@ -88,26 +90,146 @@
           allow
           for a streamlined .
         </p>
-        <div class="grid grid-cols-4 bg-white rounded-3xl">
-          <div class="flex justify-between px-8 col-span-3 bg-red-400">
-            <div class="flex">
-              <img src="images/bus-logo.png" alt="">
-              <div>
-                <h3>Greenline Paribahan</h3>
-                <p>Coach-009-WEB ! AC_Business</p>
+        <!-- Greenline Paribahan -->
+        <div class="flex bg-white rounded-3xl">
+          <div class="m-8 w-[864px]">
+            <div class="flex justify-between px-8">
+              <div class="flex items-center gap-3">
+                <img class="h-12" src="images/bus-logo.png" alt="">
+                <div class="text-left">
+                  <h3 class="font-bold text-4xl">Greenline Paribahan</h3>
+                  <p class="my-3">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div class="btn flex gap-2 bg-[#1dd1001A] border-[#1dd100] hover:bg-[#1dd1001A] hover:border-[#1dd100]">
+                <img class="h-5" src="images/seat-green.png" alt="">
+                <p class="roboto-regular font-medium text-[#1dd100]"><span>40</span> Seats left</p>
               </div>
             </div>
-            <div class="flex">
-              <img src="images/seat-green.png" alt="">
-              <p><span>40</span>Seats left</p>
+            <div class="p-8 bg-[#f7f8f8] rounded-3xl">
+              <div class="flex justify-between">
+                <span>Route</span>
+                <span class="font-bold">Dhaka-Sylhet</span>
+              </div>
+              <hr class="my-2">
+              <div class="flex justify-between">
+                <span>Departure Time</span>
+                <span class="font-bold">9:00 PM</span>
+              </div>
+              <hr class="my-2">
+              <div class="flex gap-5 justify-between">
+                <p class="bg-[#0307120D] rounded-xl p-4">Boarding Point - Laxmipur</p>
+                <p class="bg-[#0307120D] rounded-xl p-4">Dropping Point - Bogura</p>
+                <p class="bg-[#0307120D] rounded-xl p-4">Est. Time - 11 Hour</p>
+              </div>
             </div>
           </div>
-          <!-- <div class="divider lg:divider-horizontal"></div>  -->
           <img src="images/info-devider.png" alt="">
-          <div class="flex flex-col col-span-1 items-center">
+          <div class="flex justify-center gap-3 flex-col items-center  m-8">
             <div><img src="images/fare.png" alt=""></div>
-            <h3>550 Taka</h3>
+            <h3 class="font-semibold text-2xl">550 Taka</h3>
             <p>Per Seat</p>
+          </div>
+        </div>
+        <!-- Select Your Seat -->
+        <!-- Select Seat -->
+        <div class="flex gap-5 justify-between bg-white rounded-3xl my-7 p-8">
+          <div class="w-[55%]">
+            <h3 class="text-left font-semibold text-2xl">Select Your Seat</h3>
+            <hr class="my-2">
+            <div class="flex justify-between">
+              <div class="flex gap-2">
+                <img class="w-5" src="images/seat-gray.png" alt="">
+                <span class="font-semibold">Available</span>
+              </div>
+              <div class="flex gap-2">
+                <img class="w-5" src="images/seat-green.png" alt="">
+                <span class="font-semibold text-[#1dd100]">Selected</span>
+              </div>
+            </div>
+            <hr class="my-2">
+            <div class="text-right">
+              <button class="bg-[#0307121A] driver rounded-lg"><img class="w-5" src="images/driver.svg"
+                  alt=""></button>
+            </div>
+            <!-- All Seat Box -->
+            <div class="flex justify-between gap-8 roboto-regular">
+              <!-- left seats -->
+              <div class="flex gap-4 justify-between">
+                <ul>
+                  <li class="seat-line">A</li>
+                  <li class="seat-line">B</li>
+                  <li class="seat-line">C</li>
+                  <li class="seat-line">D</li>
+                  <li class="seat-line">E</li>
+                  <li class="seat-line">F</li>
+                  <li class="seat-line">G</li>
+                  <li class="seat-line">H</li>
+                  <li class="seat-line">I</li>
+                  <li class="seat-line">J</li>
+                </ul>
+                <ul>
+                  <li class="seat">A1</li>
+                  <li class="seat">B1</li>
+                  <li class="seat">C1</li>
+                  <li class="seat">D1</li>
+                  <li class="seat">E1</li>
+                  <li class="seat">F1</li>
+                  <li class="seat">G1</li>
+                  <li class="seat">H1</li>
+                  <li class="seat">I1</li>
+                  <li class="seat">J1</li>
+                </ul>
+                <ul>
+                  <li class="seat">A2</li>
+                  <li class="seat">B2</li>
+                  <li class="seat">C2</li>
+                  <li class="seat">D2</li>
+                  <li class="seat">E2</li>
+                  <li class="seat">F2</li>
+                  <li class="seat">G2</li>
+                  <li class="seat">H2</li>
+                  <li class="seat">I2</li>
+                  <li class="seat">J2</li>
+                </ul>
+              </div>
+              <!-- right seats -->
+              <div class="flex gap-4 justify-between">
+                <ul>
+                  <li class="seat">A3</li>
+                  <li class="seat">B3</li>
+                  <li class="seat">C3</li>
+                  <li class="seat">D3</li>
+                  <li class="seat">E3</li>
+                  <li class="seat">F3</li>
+                  <li class="seat">G3</li>
+                  <li class="seat">H3</li>
+                  <li class="seat">I3</li>
+                  <li class="seat">J3</li>
+                </ul>
+                <ul>
+                  <li class="seat">A4</li>
+                  <li class="seat">B4</li>
+                  <li class="seat">C4</li>
+                  <li class="seat">D4</li>
+                  <li class="seat">E4</li>
+                  <li class="seat">F4</li>
+                  <li class="seat">G4</li>
+                  <li class="seat">H4</li>
+                  <li class="seat">I4</li>
+                  <li class="seat">J4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider divider-horizontal mx-3"></div>
+          <!-- Calculation Side -->
+          <div class="w-[45%]">
+            <h3 class="text-left font-semibold text-2xl">Select Your Seat</h3>
+            <!-- Calculation -->
+            <div></div>
+            <!-- Passenger Form -->
+            <form action=""></form>
           </div>
         </div>
       </div>
