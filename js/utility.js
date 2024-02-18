@@ -36,6 +36,8 @@ function couponApply(coupon) {
     hideCouponFieldCol();
     setGrandPrice();
     showDiscount();
+  } else if (coupon === ''){
+    alert('Input your coupon.');
   } else {
     alert('Invalid Coupon.');
   }
@@ -60,5 +62,4 @@ function nextPage(){
   document.getElementById('header').classList.add('hidden');
   document.getElementById('footer').classList.add('hidden');
   document.getElementById('next-page').classList.remove('hidden');
-  console.log('Next Page.');
 }
