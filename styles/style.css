@@ -33,3 +33,8 @@ body {
   padding-top: .8rem;
   padding-bottom: .8rem;
 }
+
+.seat-select {
+  background: #1dd100;
+  color: white;
+}
