@@ -230,11 +230,12 @@
             <!-- Calculation -->
             <div>
               <div class="overflow-x-auto">
-                <table class="table bg-[#f7f8f8]">
+                <table class="table bg-[#f7f8f8] roboto-regular">
                   <!-- head -->
                   <thead>
                     <tr class="font-medium text-base text-[#030712]">
-                      <th>Seat <span id="select-seat">0</span></th>
+                      <th>Seat <sup><span class="text-white px-2 rounded-md font-bold bg-[#1dd100] text-xs"
+                            id="select-seat">2</span></sup></th>
                       <th>Class</th>
                       <th>Price</th>
                     </tr>
@@ -261,10 +262,11 @@
                     <tr>
                       <td colspan="3">
                         <div class="flex w-full bg-white p-2 rounded-2xl">
-                          <input class="p-4 w-3/4 m-0 focus:outline-none" type="text" id=""
-                            placeholder="Have any copupon?">
+                          <input class="p-4 w-3/4 m-0 focus:outline-none " type="text" id=""
+                            placeholder="Have any copupon?" disabled="disabled">
                           <button
-                            class="btn w-1/4 m-0 text-white font-semibold text-base bg-[#1dd100] hover:bg-[#1dd100E6]">Apply</button>
+                            class="btn w-1/4 m-0 text-white font-semibold text-base bg-[#1dd100] hover:bg-[#1dd100E6]"
+                            disabled="disabled">Apply</button>
                         </div>
                       </td>
                     </tr>
@@ -278,7 +280,7 @@
               </div>
             </div>
             <!-- Passenger Form -->
-            <form class="text-left font-semibold  flex flex-col gap-3 mt-4">
+            <form class="text-left font-semibold flex flex-col gap-3 mt-4">
               Passenger Name*
               <label class="input input-bordered flex items-center gap-2 mb-3">
                 <input type="text" class="grow" placeholder="Enter your name" />
@@ -301,6 +303,22 @@
           </div>
         </div>
       </div>
+      </div>
+    </section>
+    <!-- Success Section -->
+    <section class="bg-[#0307120D] h-[100vh] flex justify-center items-center">
+      <div class="flex flex-col justify-center items-center text-center gap-5 p-12 bg-white rounded-3xl">
+        <img class="w-32" src="images/success.png" alt="">
+        <h3 class="text-[#559e5b] font-extrabold text-3xl roboto-regular">SUCCESS</h3>
+        <p class="font-bold">
+          Thank you for Booking Our Bus Seats. <br>
+          We are working hard to find the best service and deals for you.
+        </p>
+        <p>
+          Shortly you will find a confirmation in your email.
+        </p>
+        <button
+          class="btn mx-auto text-white font-semibold text-base bg-[#559e5b] hover:bg-[#559e5bE6]">Continue</button>
       </div>
     </section>
   </main>
