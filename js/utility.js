@@ -3,7 +3,7 @@ function setSelectSeat(value) {
   li.innerHTML = `
   <tr class="border-none">
   <td>${value}</td>
-  <td>Economoy</td>
+  <td>Economy</td>
   <td class="text-right">550</td>
   </tr>
 `;
@@ -53,4 +53,12 @@ function setGrandPrice() {
 function showDiscount(){
   document.getElementById('discount').innerText = discount;
   document.getElementById('discount-row').classList.remove('hidden');
+}
+
+function nextPage(){
+  document.getElementById('main').classList.add('hidden');
+  document.getElementById('header').classList.add('hidden');
+  document.getElementById('footer').classList.add('hidden');
+  document.getElementById('next-page').classList.remove('hidden');
+  console.log('Next Page.');
 }

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="max-w-7xl mx-auto my-7">
+  <header id="header" class="max-w-7xl mx-auto my-7">
     <nav class="flex justify-between items-center mb-7">
       <div>
         <h3 class="font-extrabold text-4xl">P-Ticket</h3>
@@ -45,7 +45,7 @@
         Tickets</a>
     </section>
   </header>
-  <main>
+  <main id="main">
     <!-- Best offers for you -->
     <section class="max-w-7xl mx-auto mt-7 text-center">
       <h3 class="font-bold text-4xl my-12">Best offers for you</h3>
@@ -275,49 +275,48 @@
               </div>
             </div>
             <!-- Passenger Form -->
-            <form class="text-left font-semibold flex flex-col gap-3 mt-4">
+            <div class="text-left font-semibold flex flex-col gap-3 mt-4">
               Passenger Name*
               <label class="input input-bordered flex items-center gap-2 mb-3">
-                <input type="text" class="grow" placeholder="Enter your name" />
+                <input id="name" type="text" class="grow" placeholder="Enter your name" />
               </label>
               Phone Number*
               <label class="input input-bordered flex items-center gap-2 mb-3">
-                <input type="text" class="grow" placeholder="Enter your phone number" />
+                <input id="phone" type="text" class="grow" placeholder="Enter your phone number" />
               </label>
               Email ID
               <label class="input input-bordered flex items-center gap-2 mb-3">
-                <input type="email" class="grow" placeholder="Enter your email id" />
+                <input id="email" type="email" class="grow" placeholder="Enter your email id" />
               </label>
-              <button
+              <button id="next-button"
                 class="btn w-full m-0 text-white font-semibold text-base bg-[#1dd100] hover:bg-[#1dd100E6]">Next</button>
               <div class="flex justify-evenly">
                 <span>Terms and Conditions</span>
                 <span>Cancellation Policy</span>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
       </div>
     </section>
-    <!-- Success Section -->
-    <section class="bg-[#0307120D] h-[100vh] flex justify-center items-center">
-      <div class="flex flex-col justify-center items-center text-center gap-5 p-12 bg-white rounded-3xl">
-        <img class="w-32" src="images/success.png" alt="">
-        <h3 class="text-[#559e5b] font-extrabold text-3xl roboto-regular">SUCCESS</h3>
-        <p class="font-bold">
-          Thank you for Booking Our Bus Seats. <br>
-          We are working hard to find the best service and deals for you.
-        </p>
-        <p>
-          Shortly you will find a confirmation in your email.
-        </p>
-        <button
-          class="btn mx-auto text-white font-semibold text-base bg-[#559e5b] hover:bg-[#559e5bE6]">Continue</button>
-      </div>
-    </section>
   </main>
-  <footer>
+  <!-- Success Section -->
+  <section id="next-page" class="bg-[#0307120D] h-[100vh] flex justify-center items-center hidden">
+    <div class="flex flex-col justify-center items-center text-center gap-5 p-12 bg-white rounded-3xl">
+      <img class="w-32" src="images/success.png" alt="">
+      <h3 class="text-[#559e5b] font-extrabold text-3xl roboto-regular">SUCCESS</h3>
+      <p class="font-bold">
+        Thank you for Booking Our Bus Seats. <br>
+        We are working hard to find the best service and deals for you.
+      </p>
+      <p>
+        Shortly you will find a confirmation in your email.
+      </p>
+      <button class="btn mx-auto text-white font-semibold text-base bg-[#559e5b] hover:bg-[#559e5bE6]">Continue</button>
+    </div>
+  </section>
+  <footer id="footer">
     <hr class="pb-[200px]">
   </footer>
   <script src="js/utility.js"></script>
