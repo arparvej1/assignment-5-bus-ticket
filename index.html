@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bus Ticket</title>
-  <link rel="stylesheet" href="styles/style.css">
   <!-- Tailwind & daisyui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- My Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
@@ -127,13 +128,13 @@
           <img src="images/info-devider.png" alt="">
           <div class="flex justify-center gap-3 flex-col items-center  m-8">
             <div><img src="images/fare.png" alt=""></div>
-            <h3 class="font-semibold text-2xl">550 Taka</h3>
+            <h3 class="font-bold text-2xl">550 Taka</h3>
             <p>Per Seat</p>
           </div>
         </div>
         <!-- Select Your Seat -->
         <!-- Select Seat -->
-        <div class="flex gap-5 justify-between bg-white rounded-3xl my-7 p-8">
+        <div class="flex flex-col lg:flex-row gap-5 justify-between bg-white rounded-3xl my-7 p-8">
           <div class="w-[55%]">
             <h3 class="text-left font-semibold text-2xl">Select Your Seat</h3>
             <hr class="my-2">
@@ -149,13 +150,12 @@
             </div>
             <hr class="my-2">
             <div class="text-right">
-              <button class="bg-[#0307121A] driver rounded-lg"><img class="w-5" src="images/driver.svg"
-                  alt=""></button>
+              <button class="bg-[#0307121A] driver rounded-lg"><img class="w-5" src="images/driver.svg" alt=""></button>
             </div>
             <!-- All Seat Box -->
             <div class="flex justify-between gap-8 roboto-regular">
               <!-- left seats -->
-              <div class="flex gap-4 justify-between">
+              <div class="flex gap-5 justify-between">
                 <ul>
                   <li class="seat-line">A</li>
                   <li class="seat-line">B</li>
@@ -194,7 +194,7 @@
                 </ul>
               </div>
               <!-- right seats -->
-              <div class="flex gap-4 justify-between">
+              <div class="flex gap-5 justify-between">
                 <ul>
                   <li class="seat">A3</li>
                   <li class="seat">B3</li>
@@ -224,10 +224,57 @@
           </div>
           <div class="divider divider-horizontal mx-3"></div>
           <!-- Calculation Side -->
-          <div class="w-[45%]">
+          <div class="lg:w-[45%]">
             <h3 class="text-left font-semibold text-2xl">Select Your Seat</h3>
+            <hr class="my-2">
             <!-- Calculation -->
-            <div></div>
+            <div>
+              <div class="overflow-x-auto">
+                <table class="table bg-[#f7f8f8]">
+                  <!-- head -->
+                  <thead>
+                    <tr class="font-medium text-base text-[#030712]">
+                      <th>Seat <span id="select-seat">0</span></th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr class="border-none">
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>Blue</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr class="border-none">
+                      <td>Hart Hagerty</td>
+                      <td>Desktop Support Technician</td>
+                      <td>Purple</td>
+                    </tr>
+                    <!-- total -->
+                    <tr class="border-t-2 border-b-0 font-semibold">
+                      <td>Total Price</td>
+                      <td></td>
+                      <td>BDT <span id="total-price">0</span></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <div class="flex w-full bg-white p-2 rounded-2xl">
+                          <input class="p-4 w-3/4 m-0 focus:outline-none" type="text" id="" placeholder="Have any copupon?">
+                        <button class="btn w-1/4 m-0 text-white font-semibold text-base bg-[#1dd100] hover:bg-[#1dd100E6]">Apply</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-none font-semibold">
+                      <td>Grand Total</td>
+                      <td></td>
+                      <td>BDT <span id="total-price">0</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
             <!-- Passenger Form -->
             <form action=""></form>
           </div>
